@@ -1,0 +1,27 @@
+<html>
+<head>
+{% load static %}
+<link rel="stylesheet" src="{% static 'counter/styles.css' %}">
+</head>
+<body>
+  <h1>Welcome to Croissant Clicker!</h1>
+  <h2>You have <p id="counter" style="display: inline;">0</p> cookies</h2>
+  <button type="button" id="counter-btn" style="/*! display: inline; */" onclick="incrementCounter()">Click me</button>
+
+</body>
+<script>
+    var count = 0; 
+    function incrementCounter() {
+      count++
+      document.getElementById("counter").innerText = count
+    }
+    console.log("Hello World")
+</script>
+</html>
+
+{% comment %} <form action="{% url 'counter:saveUser' %}" method="post">
+  {% csrf_token %}
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username">
+  <button type="submit">Save progress</button>
+</form> {% endcomment %}
