@@ -1,11 +1,12 @@
+<!DOCTYPE html>
 <html>
 <head>
 {% load static %}
-<link rel="stylesheet" src="{% static 'counter/styles.css' %}">
+<link rel="stylesheet" href="{% static 'counter/styles.css' %}">
 </head>
 <body>
   <h1>Welcome to Croissant Clicker!</h1>
-  <h2>You have <p id="counter" style="display: inline;">0</p> cookies</h2>
+  <h2>You have <p id="counter" style="display: inline;">0</p> croissants</h2>
   <button type="button" id="counter-btn" style="/*! display: inline; */" onclick="incrementCounter()">Click me</button>
 
 </body>
@@ -16,6 +17,9 @@
       document.getElementById("counter").innerText = count
     }
     console.log("Hello World")
+    function submitScore() {
+      
+    }
 </script>
 </html>
 
